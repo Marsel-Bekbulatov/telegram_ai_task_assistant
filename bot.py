@@ -419,7 +419,7 @@ async def button_callback(update: Update, context: ContextTypes.DEFAULT_TYPE) ->
     original_display_text = build_task_message_text(task, user_tz) 
 
     if action == "done":
-        logger.info(f"Mark {tid} done user {uid}") 
+        logger.info(f"Mark {task_id} done user {user_id}")
         logger.info(f"Mark task {task_id} done user {user_id}")
         if task['status']=='done':
             logger.info(f"Task {task_id} already done.")
